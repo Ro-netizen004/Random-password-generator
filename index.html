@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Password Generator</h1>
+        <h2>Create super strong passwords with this site!</h2>
+        <p>Customize your password with your preferred length and character types — including uppercase letters,<br>
+            lowercase letters, numbers, and special symbols. Whether you're securing your email, online accounts, <br>or sensitive data, 
+            this tool helps you generate passwords that are hard to crack.</p>
+        <p></p>
+        <div class="container-with-pass-and-button">
+            <div class="container"><span id="new-password">your very secure password</span></div>
+            <button id="generate-password" onclick="generatePassword()">Generate Password</button>
+        </div>
+        <p></p>
+
+        <div class="container1">
+        <input type="range" min="0" max="20" value="10" id="password-length">
+        <p>Length: <span id="length-value">10</span></p>
+        <label>
+            <input type="checkbox" id="symbols">
+            !@#$%^&*
+        </label>
+        <label>
+            <input type="checkbox" id="capital-letters">
+            A-Z
+        </label>
+        <label>
+            <input type="checkbox" id="small-letters">
+            a-z
+        </label>
+        <label>
+            <input type="checkbox" id="numbers">
+            0-9
+        </label>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
