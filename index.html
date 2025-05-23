@@ -4,6 +4,7 @@
     </head>
 
     <body>
+
         <h1>Password Generator</h1>
         <h2>Create super strong passwords with this site!</h2>
         <p>Customize your password with your preferred length and character types — including uppercase letters,<br>
@@ -17,25 +18,40 @@
         <p></p>
 
         <div class="container1">
-        <input type="range" min="0" max="20" value="10" id="password-length">
-        <p>Length: <span id="length-value">10</span></p>
-        <label>
-            <input type="checkbox" id="symbols">
-            !@#$%^&*
-        </label>
-        <label>
-            <input type="checkbox" id="capital-letters">
-            A-Z
-        </label>
-        <label>
-            <input type="checkbox" id="small-letters">
-            a-z
-        </label>
-        <label>
-            <input type="checkbox" id="numbers">
-            0-9
-        </label>
+        <section class="checkboxes">
+            <input type="range" min="0" max="20" value="10" id="password-length">
+            <p>Length: <span id="length-value">10</span></p>
+            <label>
+                <input type="checkbox" id="symbols">
+                !@#$%^&*
+            </label>
+            <label>
+                <input type="checkbox" id="capital-letters">
+                A-Z
+            </label>
+            <label>
+                <input type="checkbox" id="small-letters">
+                a-z
+            </label>
+            <label>
+                <input type="checkbox" id="numbers">
+                0-9
+            </label>
+        </section>
+        <section class="password-tips">
+        <h2>🔒 How to Make a Strong Password</h2>
+        <ul>
+            <li>✅ Use at least 12 characters — the longer, the better.</li>
+            <li>🔀 Mix uppercase and lowercase letters.</li>
+            <li>🔢 Include numbers for added complexity.</li>
+            <li>💥 Add special symbols like !, @, #, $, %, etc.</li>
+            <li>🚫 Avoid common words, personal info, or repeated patterns.</li>
+        </ul>
+        <p>Use the options below to easily generate a secure password that meets these criteria!</p>
+        </section>
+
         </div>
+
 
     <footer class="site-footer">
         <p>&copy; 2025 Password Generator. All rights reserved.</p>

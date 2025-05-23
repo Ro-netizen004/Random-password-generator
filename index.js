@@ -27,6 +27,7 @@ slider.oninput = function(){
     length=Number(this.value);
 }
 
+
 symbols.addEventListener("change", function(){
     symbolsSelection=symbols.checked;
 })
