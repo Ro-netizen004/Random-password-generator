@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+.navbar {
+    background-color: #2c3e50;
+    padding:10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #27ae60;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
 input[type="checkbox"] {
   accent-color: #27ae60;
   cursor: pointer;
@@ -55,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+
 }
 
 /* Headings */
@@ -63,6 +89,7 @@ h1 {
   font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 0.5rem;
+  margin-top:3rem;
   text-align: center;
 }
 
@@ -112,7 +139,7 @@ p {
 }
 
 /* Generate Button */
-#generate-password {
+#generate-password, #copy-psd {
   background-color: #27ae60;
   color: white;
   border: none;
@@ -194,6 +221,7 @@ label {
   margin-top: 4rem;
   padding: 1.5rem 1rem;
   background-color: #2c3e50;
+  width: 100vw;
   color: #fff;
   font-size: 0.95rem;
   width: 100%;

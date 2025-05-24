@@ -1,13 +1,14 @@
 //variables to contain the HTML elements
-let slider = document.getElementById("password-length");
-let sliderValue = document.getElementById("length-value");
-let symbols = document.getElementById("symbols");
-let capitalLetters = document.getElementById("capital-letters");
-let smallLetters = document.getElementById("small-letters");
-let numbers = document.getElementById("numbers");
-let passwordContent = document.getElementById("new-password");
+const slider = document.getElementById("password-length");
+const sliderValue = document.getElementById("length-value");
+const symbols = document.getElementById("symbols");
+const capitalLetters = document.getElementById("capital-letters");
+const smallLetters = document.getElementById("small-letters");
+const numbers = document.getElementById("numbers");
+const passwordContent = document.getElementById("new-password");
+const copyPsd = document.getElementById("copy-psd");
 
-let length=10;
+let length=20;
 
 //All possible characters
 const SYMBOLS = "!@#$%^&*";
@@ -21,6 +22,22 @@ let symbolsSelection=false;
 let capitalSelection=false;
 let smallSelection=false;
 let numberSelection=false;
+
+copyPsd.addEventListener("click", function(){
+    const text = passwordContent.textContent;
+    if(text==="Please select characters to create the password" || 
+        text==="Please select a suitable length" || 
+        text==="your very secure password"){
+        alert("Nothing to copy yet!");
+    }
+    else{
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(passwordContent.textContent);
+
+        // Alert the copied text
+        alert("Copied the text: " + passwordContent.textContent);
+    }
+})
 
 slider.oninput = function(){
     sliderValue.textContent=this.value;

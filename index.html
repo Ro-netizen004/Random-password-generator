@@ -5,6 +5,12 @@
 
     <body>
 
+        <nav class="navbar">
+            <div class="navbar-container">
+            <a href="https://random-password-gener.netlify.app/" class="logo">🔐 PasswordGen</a>
+            </div>
+        </nav>
+
         <h1>Password Generator</h1>
         <h2>Create super strong passwords with this site!</h2>
         <p>Customize your password with your preferred length and character types — including uppercase letters,<br>
@@ -13,14 +19,18 @@
         <p></p>
         <div class="container-with-pass-and-button">
             <div class="container"><span id="new-password">your very secure password</span></div>
-            <button id="generate-password" onclick="generatePassword()">Generate Password</button>
+            <div class = "buttons">
+                <button id="generate-password" onclick="generatePassword()">Generate Password</button>
+                <button id="copy-psd">Copy to Clipboard</button>
+
+            </div>
         </div>
         <p></p>
 
         <div class="container1">
         <section class="checkboxes">
-            <input type="range" min="0" max="20" value="10" id="password-length">
-            <p>Length: <span id="length-value">10</span></p>
+            <input type="range" min="0" max="40" value="20" id="password-length">
+            <p>Length: <span id="length-value">20</span></p>
             <label>
                 <input type="checkbox" id="symbols">
                 !@#$%^&*
