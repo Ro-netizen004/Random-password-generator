@@ -150,7 +150,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-#generate-password, #copy-psd:hover {
+#generate-password:hover, #copy-psd:hover {
   background-color: #219150;
 }
 
